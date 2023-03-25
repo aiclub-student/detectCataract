@@ -11,7 +11,7 @@ import SwiftUI
 struct detectCataractApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LocalAIView()
         }
     }
 }

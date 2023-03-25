@@ -11,6 +11,10 @@
 		AAE9BF0229CCC5A600D4D2E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE9BF0129CCC5A600D4D2E0 /* ContentView.swift */; };
 		AAE9BF0429CCC5A700D4D2E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE9BF0329CCC5A700D4D2E0 /* Assets.xcassets */; };
 		AAE9BF0729CCC5A700D4D2E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE9BF0629CCC5A700D4D2E0 /* Preview Assets.xcassets */; };
+		AAE9BF0F29CCC5D600D4D2E0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AAE9BF0E29CCC5D600D4D2E0 /* Alamofire */; };
+		AAE9BF1229CCC5E500D4D2E0 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = AAE9BF1129CCC5E500D4D2E0 /* SwiftyJSON */; };
+		AAE9BF1429CCCB6F00D4D2E0 /* LocalAIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE9BF1329CCCB6F00D4D2E0 /* LocalAIView.swift */; };
+		AAE9BF1A29CE11FC00D4D2E0 /* CataractClassifier1 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AAE9BF1929CE11FC00D4D2E0 /* CataractClassifier1 1.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		AAE9BF0129CCC5A600D4D2E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AAE9BF0329CCC5A700D4D2E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAE9BF0629CCC5A700D4D2E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AAE9BF1329CCCB6F00D4D2E0 /* LocalAIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAIView.swift; sourceTree = "<group>"; };
+		AAE9BF1929CE11FC00D4D2E0 /* CataractClassifier1 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "CataractClassifier1 1.mlmodel"; sourceTree = "<group>"; };
+		AAE9BF1B29CE5E7F00D4D2E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE9BF1229CCC5E500D4D2E0 /* SwiftyJSON in Frameworks */,
+				AAE9BF0F29CCC5D600D4D2E0 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +60,11 @@
 		AAE9BEFE29CCC5A600D4D2E0 /* detectCataract */ = {
 			isa = PBXGroup;
 			children = (
+				AAE9BF1B29CE5E7F00D4D2E0 /* Info.plist */,
 				AAE9BEFF29CCC5A600D4D2E0 /* detectCataractApp.swift */,
 				AAE9BF0129CCC5A600D4D2E0 /* ContentView.swift */,
+				AAE9BF1329CCCB6F00D4D2E0 /* LocalAIView.swift */,
+				AAE9BF1929CE11FC00D4D2E0 /* CataractClassifier1 1.mlmodel */,
 				AAE9BF0329CCC5A700D4D2E0 /* Assets.xcassets */,
 				AAE9BF0529CCC5A700D4D2E0 /* Preview Content */,
 			);
@@ -83,6 +95,10 @@
 			dependencies = (
 			);
 			name = detectCataract;
+			packageProductDependencies = (
+				AAE9BF0E29CCC5D600D4D2E0 /* Alamofire */,
+				AAE9BF1129CCC5E500D4D2E0 /* SwiftyJSON */,
+			);
 			productName = detectCataract;
 			productReference = AAE9BEFC29CCC5A600D4D2E0 /* detectCataract.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +127,10 @@
 				Base,
 			);
 			mainGroup = AAE9BEF329CCC5A600D4D2E0;
+			packageReferences = (
+				AAE9BF0D29CCC5D600D4D2E0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				AAE9BF1029CCC5E500D4D2E0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = AAE9BEFD29CCC5A600D4D2E0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE9BF1429CCCB6F00D4D2E0 /* LocalAIView.swift in Sources */,
+				AAE9BF1A29CE11FC00D4D2E0 /* CataractClassifier1 1.mlmodel in Sources */,
 				AAE9BF0229CCC5A600D4D2E0 /* ContentView.swift in Sources */,
 				AAE9BF0029CCC5A600D4D2E0 /* detectCataractApp.swift in Sources */,
 			);
@@ -270,7 +292,8 @@
 				DEVELOPMENT_TEAM = T4JB96P77H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = detectCataract/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need for eye picture";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -299,7 +322,8 @@
 				DEVELOPMENT_TEAM = T4JB96P77H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = detectCataract/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need for eye picture";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -339,6 +363,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AAE9BF0D29CCC5D600D4D2E0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		AAE9BF1029CCC5E500D4D2E0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AAE9BF0E29CCC5D600D4D2E0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAE9BF0D29CCC5D600D4D2E0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		AAE9BF1129CCC5E500D4D2E0 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAE9BF1029CCC5E500D4D2E0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAE9BEF429CCC5A600D4D2E0 /* Project object */;
 }
